@@ -1,19 +1,19 @@
 import os
 import sys
 
-# Vérifie que l'on est sur Windows
+
 if os.name != "nt":
     print("Ce script fonctionne uniquement sur Windows.")
     sys.exit()
 
-# Vérification de la version Python
+
 if sys.version_info < (3, 8):
     print("Python 3.8+ est requis.")
     sys.exit()
 
 print("Environnement OK. Lancement du programme...")
 
-# Imports standards (déjà inclus dans Python)
+
 import subprocess
 import json
 import urllib.request
